@@ -63,7 +63,7 @@ jobs:
 
         # The name of the custom committer you want to use, if different from the author of the commit.
         # Default: the name of the author (set with either author_name or default_author)
-        committer_name: Committer Name
+        committer_name: Bytelv
 
         # The email of the custom committer you want to use, if different from the author of the commit.
         # Default: the email of the author (set with either author_email or default_author)
@@ -71,7 +71,7 @@ jobs:
 
         # The local path to the directory where your repository is located. You should use actions/checkout first to set it up.
         # Default: '.'
-        cwd: '.'
+        cwd: './Bytelv/Scripits-library'
 
         # Determines the way the action fills missing author name and email. Three options are available:
         # - github_actor -> UserName <UserName@users.noreply.github.com>
