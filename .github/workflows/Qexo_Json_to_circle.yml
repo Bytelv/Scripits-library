@@ -42,14 +42,14 @@ jobs:
     
         
         
-    - name: Push friends-Json # sqlite push
-      uses: github-actions-x/commit@v2.9
+    - name: Commit file
+      uses: swinton/commit@v2.x
+      env:
+        GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        commit-message: "Update friends.json"
-        files: ./Qexo_Json_to_circle/friends.json
-        rebase: 'true'
-        name: ${{ env.GITHUB_NAME }}
-        email: ${{ env.GITHUB_EMAIL }}
+        files: |
+          ./Qexo_Json_to_circle/friends.json
+        commit-message: Committing ./friends.json
+        ref: Bytelv/Scripts-library/main
         
 
