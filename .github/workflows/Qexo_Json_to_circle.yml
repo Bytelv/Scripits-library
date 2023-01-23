@@ -31,15 +31,14 @@ jobs:
         python Qexo_Json.py
         
         
-    - name: Commit & Push
-      uses: action-x/commit@v2.9
+    - name: Push friends-Json # sqlite push
+      uses: github-actions-x/commit@v2.9
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-        push-branch: 'output'
-        force-push: 'true'
-        commit-message: 'Generate Json'
-        name: github-actions[bot]
-        email: github-actions[bot]@noreply.github.com
-      
+        commit-message: "Update friends.json"
+        files: friends.json
+        rebase: 'true'
+        name: ${{ env.GITHUB_NAME }}
+        email: ${{ env.GITHUB_EMAIL }}
         
 
