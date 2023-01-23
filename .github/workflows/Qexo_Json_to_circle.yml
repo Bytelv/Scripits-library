@@ -43,7 +43,7 @@ jobs:
         
         
     - name: Commit file
-      uses: swinton/commit@v2.x
+      uses: swinton/commit@v2.0.0
       env:
         GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       with:
