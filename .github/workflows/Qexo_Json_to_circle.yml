@@ -35,6 +35,12 @@ jobs:
       run: |
         ls
         
+    - name: Read_json
+      working-directory: ./Qexo_Json_to_circle
+      run: |
+        cat friends.json | jq
+    
+        
         
     - name: Push friends-Json # sqlite push
       uses: github-actions-x/commit@v2.9
