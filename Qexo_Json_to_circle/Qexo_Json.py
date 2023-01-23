@@ -17,7 +17,6 @@ Friends=[]
 num=len(data2)
 count=0
 for _ in range(num):  #重复输入友链数据至Friend_circle字典中
-    print("重复测试")
     Friends=[1,2,3]  #初始化Friends列表
     Friends[0]=data2[count]['name']   #Friends列表数据注入
     Friends[1]=data2[count]['url']
