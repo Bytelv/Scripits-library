@@ -31,16 +31,15 @@ jobs:
         python Qexo_Json.py
         
         
-    - name: commit
-      run: |
-        git config --global user.email 2015078351@qq.com
-        git config --global user.name Bytelv
-        git add friends.json
-        git commit -m "update" -a
+    - name: Commit & Push
+      uses: action-x/commit@v2.9
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        push-branch: 'output'
+        force-push: 'true'
+        commit-message: 'Generate Json'
+        name: github-actions[bot]
+        email: github-actions[bot]@noreply.github.com
       
         
-    - name: Push changes
-      uses: Bytelv/Scrpits-librart@main
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
 
