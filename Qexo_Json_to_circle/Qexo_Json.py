@@ -27,7 +27,7 @@ for _ in range(num):  #重复输入友链数据至Friend_circle字典中
     count=count+1  #进位
 
 print(Friends_circle)
-Friends_json=json.dumps(Friends_circle)
+Friends_json=json.dumps(Friends_circle, file_obj, ensure_ascii=False, indent=2)
 print("Json数据为：",Friends_json)
 with open('friends.json', 'w') as f:
     f.write(Friends_json)
