@@ -30,6 +30,10 @@ jobs:
       run: |
         python Qexo_Json.py
         
+    - name: ls
+      run: |
+        ls
+        
         
     - name: Push friends-Json # sqlite push
       uses: github-actions-x/commit@v2.9
