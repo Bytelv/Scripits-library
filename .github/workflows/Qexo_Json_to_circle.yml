@@ -40,7 +40,7 @@ jobs:
       
         
     - name: Push changes
-      uses: Bytelv/Scrpits-librart@output
+      uses: Bytelv/Scrpits-librart@main
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
 
