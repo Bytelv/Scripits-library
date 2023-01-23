@@ -20,7 +20,9 @@ jobs:
       with:
         python-version: 3.8
 
-    - run: |
-      python run.py
+    - name: Qexo_Json_to_circle
+      working-directory: ./Qexo_Json_to_circle
+      run: |
+        python Qexo_Json.py
 
 
