@@ -41,15 +41,18 @@ jobs:
         cat friends.json | jq
     
         
+    
         
     - name: Commit file
-      uses: swinton/commit@v2.0.0
+      uses: swinton/commit@v2.x
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       with:
         files: |
           ./Qexo_Json_to_circle/friends.json
-        commit-message: Committing ./friends.json
+        commit-message: Committing ./Qexo_Json_to_circle/friends.json
         ref: refs/heads/my-branch
+    
+    
         
 
