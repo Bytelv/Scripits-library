@@ -1,0 +1,26 @@
+name: Qexo_Json_to_circle
+
+on:
+  push:
+    branches:
+      - main
+  schedule:
+    - cron: "0 0,6,12,18,21 * * *"
+  workflow_dispatch:
+  
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+
+    - name: Set up Python
+      uses: actions/setup-python@main
+      with:
+        python-version: 3.8
+
+    - run: |
+      python run.py
+
+
