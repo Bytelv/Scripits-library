@@ -31,9 +31,5 @@ Friends_json=json.dumps(Friends_circle)
 print("Json数据为：",Friends_json)
 with open('friends.json', 'w') as f:
     f.write(Friends_json)
-    f.close()
     
-f = open('friends.json','r')
-print(f.read())
-f.close()
 
