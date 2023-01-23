@@ -50,6 +50,6 @@ jobs:
         files: |
           ./Qexo_Json_to_circle/friends.json
         commit-message: Committing ./friends.json
-        ref: Bytelv/Scripts-library/main
+        ref: refs/heads/my-branch
         
 
