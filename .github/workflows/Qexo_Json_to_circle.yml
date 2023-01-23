@@ -31,11 +31,13 @@ jobs:
         python Qexo_Json.py
         
     - name: ls
+      working-directory: ./Qexo_Json_to_circle
       run: |
         ls
         
         
     - name: Push friends-Json # sqlite push
+      working-directory: ./Qexo_Json_to_circle
       uses: github-actions-x/commit@v2.9
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
