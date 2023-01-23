@@ -29,6 +29,6 @@ for _ in range(num):  #重复输入友链数据至Friend_circle字典中
 print(Friends_circle)
 Friends_json=json.dumps(Friends_circle)
 print("Json数据为：",Friends_json)
-with open('friends.json', 'w') as f:
+with open('./Qexo_Json_to_circle/friends.json', 'w') as f:
     f.write(Friends_json)
     f.close()
