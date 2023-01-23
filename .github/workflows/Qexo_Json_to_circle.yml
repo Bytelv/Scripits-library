@@ -47,7 +47,7 @@ jobs:
       with:
         # The arguments for the `git add` command (see the paragraph below for more info)
         # Default: '.'
-        add: './friends.json'
+        add: './Qexo_Json_to_circle/friends.json'
 
         # The name of the user that will be displayed as the author of the commit.
         # Default: depends on the default_author input
@@ -71,7 +71,7 @@ jobs:
 
         # The local path to the directory where your repository is located. You should use actions/checkout first to set it up.
         # Default: '.'
-        cwd: './Qexo_Json_to_circle/'
+        cwd: '.'
 
         # Determines the way the action fills missing author name and email. Three options are available:
         # - github_actor -> UserName <UserName@users.noreply.github.com>
