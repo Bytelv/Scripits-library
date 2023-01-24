@@ -46,8 +46,8 @@ jobs:
     - name: push
       uses: github-actions-x/commit@v2.9
       with:
-        github-token: ${{ secrets.GH_TOKEN }}
-        push-branch: 'master'
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        push-branch: 'main'
         commit-message: 'publish'
         force-add: 'true'
         files: ./Qexo_Json_to_circle/friends.json
