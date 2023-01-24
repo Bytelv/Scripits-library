@@ -44,7 +44,7 @@ jobs:
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         push-branch: 'main'
-        force-push: 'false'
+        force-push: 'true'
         commit-message: 'Generate Json'
         name: github-actions[bot]
         email: github-actions[bot]@noreply.github.com
