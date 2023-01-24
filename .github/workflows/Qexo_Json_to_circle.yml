@@ -22,11 +22,11 @@ jobs:
         
     - name: Import requests
       run: |
-          pip install requests
+          pip install -r requirements.txt
 
     - name: Qexo_Json_to_circle
       run: |
-        python ./Qexo_Json_to_circle/Qexo_Json.py
+        python Qexo_Json_to_circle/Qexo_Json.py
         
     - name: ls
       run: |
