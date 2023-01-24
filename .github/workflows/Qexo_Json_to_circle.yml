@@ -25,24 +25,22 @@ jobs:
           pip install requests
 
     - name: Qexo_Json_to_circle
-      working-directory: ./Qexo_Json_to_circle
       run: |
-        python Qexo_Json.py
+        python ./Qexo_Json_to_circle/Qexo_Json.py
         
     - name: ls
-      working-directory: ./Qexo_Json_to_circle
       run: |
+        cd ./Qexo_Json_to_circle
         ls
         
     - name: Read_json
-      working-directory: ./Qexo_Json_to_circle
       run: |
-        cat friends.json | jq
+        cat ./Qexo_Json_to_circle/friends.json | jq
     
         
     
     - name: Commit & Push
-      uses: github-action-x/commit@v2.9
+      uses: action-x/commit@v2.9
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         push-branch: 'main'
