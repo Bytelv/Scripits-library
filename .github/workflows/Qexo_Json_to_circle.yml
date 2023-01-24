@@ -42,18 +42,15 @@ jobs:
     
         
     
-        
-   
-
     - name: Push
-        run: |
-          git config --local user.email "2015078351@qq.com"
-          git config --local user.name "Bytelv"
-          git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
-          git pull --rebase
-          git add ./Qexo_Json_to_circle/friends.json
-          git commit -m "push friends.json"
-          git push
+      run: |
+        git config --local user.email "2015078351@qq.com"
+        git config --local user.name "Bytelv"
+        git remote set-url origin https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+        git pull --rebase
+        git add ./Qexo_Json_to_circle/friends.json
+        git commit -m "push friends.json"
+        git push
 
     
         
