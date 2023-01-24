@@ -47,6 +47,8 @@ jobs:
       uses: github-actions-x/commit@v2.9
       with:
         github-token: ${{ secrets.TOKEN }}
+        repository: Bytelv/Scripts-library
+        path: ./Qexo_Json_to_circle
         push-branch: 'main'
         commit-message: 'publish'
         force-add: 'true'
